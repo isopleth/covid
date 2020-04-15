@@ -181,7 +181,7 @@ def plotDeaths():
     ax1 = df.plot(kind='line', x='Day', y='Deaths', color='red')
     ax1.set_title('Reported hospital deaths')
     ax1.legend(['Deaths'])
-    ax.figure.savefig('deaths.png')
+    ax1.figure.savefig('deaths.png')
     plt.show()
     return startDate
 
