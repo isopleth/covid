@@ -32,7 +32,12 @@ import io
 import matplotlib.pyplot as plt
 import urllib.request
 
-inputFile = 'Historic COVID-19 Dashboard Data.xlsx'
+# Live website now only contains a dummy version of the Excel spreadsheet,
+# so use local copy
+#
+# inputFile = 'Historic COVID-19 Dashboard Data.xlsx'
+
+inputFile = 'data/Historic COVID-19 Dashboard Data.xlsx'
 
 def parseDate(date):
     """
@@ -185,13 +190,15 @@ def plotDeaths():
     plt.show()
     return startDate
 
-
-url = 'https://fingertips.phe.org.uk/documents/Historic%20COVID-19%20Dashboard%20Data.xlsx'
-response = urllib.request.urlopen(url)
-data = response.read()
-
-with open(inputFile, 'wb') as outfile:
-    outfile.write(data)
+# Live website now only contains a dummy version of the Excel spreadsheet,
+# so use local copy
+#
+# url = 'https://fingertips.phe.org.uk/documents/Historic%20COVID-19%20Dashboard%20Data.xlsx'
+# response = urllib.request.urlopen(url)
+# data = response.read()
+#
+# with open(inputFile, 'wb') as outfile:
+#    outfile.write(data)
 
 # Start date is Day 0 - the date of the first reported death
 startDate = plotDeaths()
