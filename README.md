@@ -10,6 +10,8 @@ a CSV file.  I'll update this when I get round to it.
 
 It needs the numpy, pandas and matplotlib Python packages, and xlsx2csv to convert Excel to CSV format.
 
+Day 0 is the date of the first reported death from the disease.
+
 ![plot](images/avecases.png)
 ![plot](images/avedeaths.png)
 ![plot](images/cases.png)
